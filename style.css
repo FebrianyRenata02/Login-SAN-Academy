@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  body {
+    height: 100vh;
+    background: #f3f4f6;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* ================= LEFT */
+  .left {
+    flex: 1;
+    background: #eef1f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* ================= SLIDER (FINAL FIX) */
+  .slider {
+    width: 320px;
+    height: 320px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  }
+  
+  .slides {
+    display: flex;
+    width: 400%;
+    height: 100%;
+  
+    transition: transform 0.8s cubic-bezier(0.65, 0, 0.35, 1);
+  }
+  
+  .slides img {
+    width: 100%;
+    height: 100%;
+  
+    object-fit: contain;       /* 🔥 biar gambar masuk semua */
+    object-position: center;   /* 🔥 selalu di tengah */
+  
+    flex-shrink: 0;            /* 🔥 biar gak gepeng */
+    padding: 20px;             /* 🔥 biar ada jarak estetik */
+  
+    transition: transform 0.8s ease;
+  }
+  
+  /* efek halus (optional tapi bikin premium) */
+  .slides img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* ================= TEXT */
+  .left h3 {
+    margin-bottom: 10px;
+  }
+  
+  .left p {
+    color: gray;
+    font-size: 14px;
+    text-align: center;
+    width: 60%;
+  }
+  
+  /* ================= RIGHT */
+  .right {
+    flex: 1;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* ================= FORM */
+  .form-box {
+    width: 320px;
+  }
+  
+  .logo {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .sub {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 13px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0 15px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #020826;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background: #020826;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+  }
+  
+  .signup {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+  }
