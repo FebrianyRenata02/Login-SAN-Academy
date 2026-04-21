@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // ================= DATA
     const images = [
-        "img/learning_video.png",
-        "img/remote_internship.png",
+        "https://raw.githubusercontent.com/FebrianyRenata02/Login-SAN-Academy/refs/heads/main/img/Learning_Video.png",
+        "https://raw.githubusercontent.com/FebrianyRenata02/Login-SAN-Academy/refs/heads/main/img/Remote_Internship.png",
         "img/university.png",
         "img/school.png"
     ];
